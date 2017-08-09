@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".fragments.FragmentTop">
+
+  <RelativeLayout
+    android:id="@+id/rl_user_avatar_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp">
+    <RelativeLayout
+      android:id="@+id/rl_user_relative_edit"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginEnd="40dp"
+      android:layout_centerInParent="true"
+      android:layout_toStartOf="@+id/iv_user_avatar">
+      <ImageView
+        android:id="@+id/iv_user_relative_edit"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/user_relative_edit" />
+    </RelativeLayout>
+    <slide.jwg.cn.slidecardapplication.common.views.CircleImageView
+      android:id="@+id/iv_user_avatar"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/user_default_portrait" />
+    <RelativeLayout
+      android:id="@+id/rl_user_relative_delete"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="40dp"
+      android:layout_centerInParent="true"
+      android:layout_toEndOf="@+id/iv_user_avatar">
+      <ImageView
+        android:id="@+id/iv_user_relative_delete"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/user_relative_delete" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_below="@+id/rl_user_avatar_area"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:id="@+id/rtv_user_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAllCaps="true"
+      android:textColor="@color/c_666666"
+      android:textSize="18sp"
+      app:typeface="roboto_thin"
+      tools:text="张三" />
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:layout_width="1dp"
+      android:layout_height="20dp"
+      android:layout_marginLeft="3dp"
+      android:background="@color/c_666666"
+      android:textAllCaps="true" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:id="@+id/rtv_user_sex"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:textAllCaps="true"
+      android:textColor="@color/c_666666"
+      android:textSize="18sp"
+      app:typeface="roboto_thin"
+      tools:text="男" />
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:layout_width="1dp"
+      android:layout_height="20dp"
+      android:layout_marginLeft="3dp"
+      android:background="@color/c_666666"
+      android:textAllCaps="true" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:id="@+id/rtv_user_relation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:textAllCaps="true"
+      android:textColor="@color/c_666666"
+      android:textSize="18sp"
+      app:typeface="roboto_thin"
+      tools:text="配偶" />
+  </LinearLayout>
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/shadow" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:id="@+id/rtv_user_birth"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:gravity="center"
+      android:text="1988/02/03"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      app:typeface="roboto_medium" />
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/circle" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+      android:id="@+id/rtv_user_tel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:gravity="center"
+      android:text="17710189466"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      app:typeface="roboto_medium" />
+  </LinearLayout>
+</RelativeLayout>
